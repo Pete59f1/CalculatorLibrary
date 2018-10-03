@@ -30,10 +30,10 @@ namespace CalculatorLibrary
 
         public static double Sum(double[] numbers)
         {
-            double sum = numbers[0];
+            double sum = 0;
             for (int i = 0; i < numbers.Length; i++)
             {
-                sum = numbers[i] + sum;
+                sum += numbers[i];
             }
             return sum;
         }
@@ -66,7 +66,7 @@ namespace CalculatorLibrary
 
         public static double Average(double[] numbers)
         {
-            double average = numbers[0];
+            double average = 0;
             for (int i = 4; i < numbers.Length; i++)
             {
                 if (average < numbers[i])
