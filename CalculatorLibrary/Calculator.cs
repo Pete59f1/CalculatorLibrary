@@ -67,14 +67,12 @@ namespace CalculatorLibrary
         public static double Average(double[] numbers)
         {
             double average = 0;
-            for (int i = 4; i < numbers.Length; i++)
+            for (int i = 0; i < numbers.Length; i++)
             {
-                if (average < numbers[i])
-                {
-                    average = numbers[i];
-                }
+                average += numbers[i];
+
             }
-            return average;
+            return average / numbers.Length;
         }
     }
 }
